@@ -28,7 +28,7 @@ const props = defineProps({
   },
   searchTrigger: {
     type: String as PropType<SearchTriggerTypeEnum>,
-    default: 'input',
+    default: 'blur',
   },
   countSymbolSearchTrigger: {
     type: Number,
