@@ -6,14 +6,14 @@
     padding-left: 0;
 
 
-    .list-enter-active,
-    .list-leave-active {
+    .user-list-enter-active,
+    .user-list-leave-active {
         transition: all 0.5s ease;
     }
 
-    .list-enter-from,
-    .list-leave-to {
+    .user-list-enter-from,
+    .user-list-leave-to {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateX(5px);
     }
 }
