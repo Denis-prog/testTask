@@ -1,0 +1,88 @@
+@import "variables";
+
+@mixin btn-size($size) {
+  @if $size ==small {
+    min-width: $btn-small-size;
+    height: $btn-small-size;
+    font-size: $btn-font-size-small;
+    padding: $btn-padding-small;
+    line-height: $btn-lh-small;
+  }
+
+  @else if $size ==medium {
+    min-width: $btn-medium-size;
+    height: $btn-medium-size;
+    font-size: $btn-font-size-medium;
+    padding: $btn-padding-medium;
+    line-height: $btn-lh-medium;
+  }
+}
+
+@mixin btn-icon-size($size) {
+  @if $size ==small {
+    width: $btn-icon-size-small;
+    height: $btn-icon-size-small;
+  }
+
+  @else if $size ==medium {
+    width: $btn-icon-size-medium;
+    height: $btn-icon-size-medium
+  }
+}
+
+@mixin button-contained($background,
+  $hover-background,
+  $active-background,
+  $focus-background,
+  $color: $btn-contained-color,
+  $disabled-color: $btn-base-disabled-color,
+  $disabled-bg-color: $btn-contained-disabled-bg-color) {
+  background-color: $background;
+  color: $color;
+  border: 0;
+
+  &:focus-visible {
+    background-color: $focus-background;
+  }
+
+  &:hover {
+    background-color: $hover-background;
+  }
+
+  &:active,
+  &.base-btn-active {
+    background-color: $active-background;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    background-color: $disabled-bg-color;
+  }
+}
+
+@mixin btn-ghost($main-color,
+  $hover-color,
+  $active-color,
+  $focus-color,
+  $background: $btn-ghost-bg-color,
+  $disabled-color: $btn-base-disabled-color) {
+  border: 0;
+  background-color: $background;
+  color: $main-color;
+
+  &:focus-visible {
+    color: $focus-color;
+  }
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
+}

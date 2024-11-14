@@ -1,0 +1,47 @@
+@import '@/styles/mixins/main';
+@import "@/styles/variables/main";
+
+.user-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border: $border-width $border-style $border-color;
+
+    padding: 15px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        min-width: 0;
+    }
+
+    &__content-col {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 100px;
+        max-width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &_align-end {
+            align-self: flex-end
+        }
+    }
+
+    &__content-text {
+        @include text-overflow;
+    }
+
+    &__controls {
+        display: flex;
+        margin-left: 15px;
+
+        &>*:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}

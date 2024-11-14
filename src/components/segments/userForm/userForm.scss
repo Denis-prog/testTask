@@ -1,0 +1,20 @@
+.user-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    &__main {
+        flex-grow: 1;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}

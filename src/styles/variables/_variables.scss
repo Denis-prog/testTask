@@ -1,0 +1,81 @@
+
+//color
+$color-black: #000;
+$color-white: #fff;
+
+$color-purple-100: #6938a9;
+$color-purple-200: #52238d;
+$color-purple-300: #3c0c6f;
+$color-purple-400: #270250;
+
+$color-green-100: #1cb351;
+$color-green-200: #13893c;
+$color-green-300: #0a6129;
+$color-green-400: #065020;
+
+$color-red-100: #d7233f;
+$color-red-200: #bb1b34;
+$color-red-300: #99192d;
+$color-red-400: #81071a;
+
+$color-grey-100: #d6d6d6;
+$color-grey-200: #7f818f;
+$color-grey-300: #f1f1f4;
+
+// size
+$base-control-sizes: small, medium;
+
+$size-control-small: 22px;
+$size-control-medium: 40px;
+
+
+//color
+
+// >>> Primary
+$primary-color: $color-purple-100;
+$primary-color-hover: $color-purple-200;
+$primary-color-active: $color-purple-300;
+$primary-color-focus: $color-purple-400;
+
+// >>> Success
+$success-color: $color-green-100;
+$success-color-hover: $color-green-200;
+$success-color-active: $color-green-300;
+$success-color-focus: $color-green-400;
+
+// >>> danger
+$danger-color: $color-red-100;
+$danger-color-hover: $color-red-200;
+$danger-color-active: $color-red-300;
+$danger-color-focus: $color-red-400;
+
+
+//sizes
+$control-sizes: small, medium;
+$size-control-small: 14px !default;
+$size-control-medium: 20px !default;
+
+
+//border
+$border-width: 1px;
+$border-style: solid;
+$border-radius: 4px;
+$border-color: $color-grey-100;
+
+
+//bg
+$bg-disabled: $color-grey-100;
+
+//text
+$text-color-100: $color-black;
+$text-color-200: $color-white;
+$text-color-disabled: $color-grey-300;
+$text-color-secondary: $color-grey-200;
+
+
+//button
+$btn-border: 1px solid;
+
+//contained
+$btn-contained-text-color: $text-color-200;
+$btn-contained-disabled-bg: $bg-disabled;

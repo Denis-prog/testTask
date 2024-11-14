@@ -1,0 +1,116 @@
+@import "variables";
+@import "mixins";
+
+.base-btn {
+  // статичные неизменяемые стили
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+
+  // динамичные стили
+  min-width: $btn-base-size;
+  height: $btn-base-size;
+  border: $btn-base-border;
+  padding: $btn-base-padding;
+  line-height: $btn-base-line-height;
+  border-radius: $btn-base-border-radius;
+  background-color: $btn-base-background-color;
+
+  font-size: $btn-base-font-size;
+  color: $btn-base-color;
+  white-space: nowrap;
+
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+
+}
+
+@each $size in $btn-sizes {
+  .base-btn-#{$size} {
+    @include btn-size($size);
+
+    .base-btn-icon {
+      @include btn-icon-size($size);
+    }
+
+    &.base-btn-only-icon {
+      .base-btn-icon {
+        @include btn-icon-size($size);
+      }
+    }
+  }
+}
+
+// формируем стили вариантов кнопки
+.base-btn-contained {
+  &.base-btn-primary {
+    @include button-contained(
+      $btn-primary-color,
+      $btn-primary-color-hover,
+      $btn-primary-color-active,
+      $btn-primary-color-focus
+    );
+  }
+
+  &.base-btn-success {
+    @include button-contained(
+      $btn-success-color,
+      $btn-success-color-hover,
+      $btn-success-color-active,
+      $btn-success-color-focus
+    );
+  }
+
+  &.base-btn-danger {
+    @include button-contained(
+      $btn-danger-color,
+      $btn-danger-color-hover,
+      $btn-danger-color-active,
+      $btn-danger-color-focus
+    );
+  }
+}
+
+.base-btn-ghost {
+  &.base-btn-primary {
+    @include btn-ghost(
+      $btn-primary-color,
+      $btn-primary-color-hover,
+      $btn-primary-color-active,
+      $btn-primary-color-focus
+    );
+  }
+
+  &.base-btn-success {
+    @include btn-ghost(
+      $btn-success-color,
+      $btn-success-color-hover,
+      $btn-success-color-active,
+      $btn-success-color-focus
+    );
+  }
+
+  &.base-btn-danger {
+    @include btn-ghost(
+      $btn-danger-color,
+      $btn-danger-color-hover,
+      $btn-danger-color-active,
+      $btn-danger-color-focus
+    );
+  }
+}
+
+.base-btn-only-icon {
+  padding: 0;
+}

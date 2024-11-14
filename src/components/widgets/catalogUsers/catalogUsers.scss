@@ -1,0 +1,12 @@
+.catalog-users {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+
+    &__search-bar {
+        border: 1px solid #000000;
+        padding: 10px;
+    }
+}

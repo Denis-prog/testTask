@@ -1,0 +1,47 @@
+@import "@/styles/variables/main";
+
+
+.base-form-item {
+  width: 100%;
+
+  .control-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-label {
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: $text-color-secondary;
+    margin-bottom: 4px;
+  }
+
+  &-message {
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: $text-color-secondary;
+    margin-top: 4px;
+
+    &.-error {
+      color: $danger-color;
+    }
+  }
+
+  &.-error {
+    :deep(.base-input__control) {
+      border-color: $danger-color;
+    }
+  }
+
+  &.-required {
+    .base-form-item-label {
+      &:after {
+        content: "*";
+        letter-spacing: 1.2px;
+        color: $danger-color;
+      }
+    }
+  }
+}

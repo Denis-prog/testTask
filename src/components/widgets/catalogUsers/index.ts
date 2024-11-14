@@ -1,0 +1,1 @@
+export { default as CatalogUsers } from './CatalogUsers.vue';

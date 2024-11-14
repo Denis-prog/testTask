@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "b175",
+      "name": "xcxc",
+      "phone": "343443",
+      "mail": "den@mail.ru"
+    },
+    {
+      "id": "bdda",
+      "name": "sdsd",
+      "phone": "33",
+      "mail": "sdsd"
+    },
+    {
+      "id": "d585",
+      "name": "asas",
+      "phone": "111",
+      "mail": "asa"
+    },
+    {
+      "id": "8484",
+      "name": "asas",
+      "phone": "asas",
+      "mail": "asas"
+    }
+  ]
+}

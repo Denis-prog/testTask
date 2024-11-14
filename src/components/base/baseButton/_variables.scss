@@ -1,0 +1,62 @@
+@import "@/styles/variables/main";
+
+// формируем стили размеров
+$btn-sizes: $base-control-sizes;
+
+//disabled
+$btn-base-disabled-color: $text-color-disabled;
+$btn-ghost-disabled-bg-color: transparent;
+//
+
+//sizes
+$btn-small-size: $size-control-small;
+$btn-medium-size: $size-control-medium;
+
+$btn-font-size-small: 12px;
+$btn-font-size-medium: 18px;
+
+$btn-padding-small: 2px 14px;
+$btn-padding-medium: 6px 12px;
+
+$btn-lh-small: 16px;
+$btn-lh-medium: 18px;
+
+$btn-icon-size-small: 20px;
+$btn-icon-size-medium: 30px;
+
+//
+
+//base
+$btn-base-size: $size-control-small;
+$btn-base-font-size: $btn-font-size-small;
+$btn-base-icon-size: $btn-icon-size-small;
+$btn-base-padding: $btn-padding-small;
+$btn-base-line-height: $btn-lh-small;
+$btn-base-color: $text-color-200;
+$btn-base-border: $btn-border;
+$btn-base-border-radius: $border-radius;
+$btn-base-background-color: $success-color;
+//
+
+//contained
+$btn-contained-color: $btn-contained-text-color;
+$btn-contained-disabled-bg-color: $btn-contained-disabled-bg;
+
+//ghost
+$btn-ghost-bg-color: transparent !default;
+
+// colors
+$btn-primary-color: $primary-color;
+$btn-primary-color-hover: $primary-color-hover;
+$btn-primary-color-active: $primary-color-active;
+$btn-primary-color-focus: $primary-color-focus;
+
+$btn-success-color: $success-color;
+$btn-success-color-hover: $success-color-hover;
+$btn-success-color-active: $success-color-active;
+$btn-success-color-focus: $success-color-focus;
+
+$btn-danger-color: $danger-color;
+$btn-danger-color-hover: $danger-color-hover;
+$btn-danger-color-active: $danger-color-active;
+$btn-danger-color-focus: $danger-color-focus;

@@ -1,0 +1,32 @@
+@import './variables.scss';
+
+.base-input {
+    position: relative;
+    min-width: 30px;
+
+    &__control {
+        outline: 0;
+        width: 100%;
+        height: 100%;
+        font: inherit;
+        padding: 5px 25px 5px 5px;
+        background-color: transparent;
+        cursor: default;
+        border: 1px solid $border-color;
+
+        &:focus {
+            border: 1px solid $primary-color-focus;
+        }
+        
+        &:disabled {
+            background-color: $bg-disabled;
+        }
+    }
+
+    &__clear-btn {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
